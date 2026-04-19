@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stylish ID Service</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family: 'Hind Siliguri', sans-serif;
+    background:#020617;
+}
+
+/* Glass Effect */
+.glass{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+/* Glow */
+.glow{
+    box-shadow:0 0 25px rgba(59,130,246,0.6);
+}
+
+/* Float Animation */
+@keyframes float{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-10px)}
+}
+.float{
+    animation:float 3s ease-in-out infinite;
+}
+
+/* Rotate */
+@keyframes spinSlow{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+}
+.spinSlow{
+    animation:spinSlow 8s linear infinite;
+}
+</style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen p-4">
+
+<div class="max-w-md w-full glass rounded-3xl p-6 text-center relative overflow-hidden">
+
+<!-- Blur BG -->
+<div class="absolute -top-20 -left-20 w-60 h-60 bg-blue-500/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-20 -right-20 w-60 h-60 bg-purple-500/20 rounded-full blur-3xl"></div>
+
+<div class="relative z-10">
+
+<!-- Badge -->
+<div class="text-xs text-blue-400 border border-blue-400 px-3 py-1 rounded-full inline-block mb-4">
+PREMIUM ID DESIGNER
+</div>
+
+<!-- Profile -->
+<div class="relative mb-5 flex justify-center">
+<div class="w-32 h-32 p-1 rounded-full bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 spinSlow">
+
+<div class="w-full h-full bg-black rounded-full flex items-center justify-center">
+<span class="text-gray-400 text-4xl">👤</span>
+</div>
+
+</div>
+
+<div class="absolute bottom-1 right-10 w-5 h-5 bg-green-500 rounded-full border-2 border-black"></div>
+</div>
+
+<!-- Stylish Line -->
+<div class="text-blue-400 text-xs mb-3 animate-pulse">
+⚛︎::::::::【 V4ZRASHD 】::::::::⚛︎
+</div>
+
+<!-- Title -->
+<h1 class="text-white text-2xl font-bold mb-3">
+আপনার আইডি সাজান <br>
+<span class="bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+স্টাইলিশ ভাবে!
+</span>
+</h1>
+
+<!-- Text -->
+<p class="text-gray-300 text-sm mb-4">
+আসসালামু আলাইকুম 🤍<br>
+আপনার Facebook ID কি stylish না?<br>
+আমি আপনার ID কে premium look দিবো 🔥
+</p>
+
+<p class="text-blue-300 text-sm italic mb-5">
+Inbox করুন এখনই 💬
+</p>
+
+<!-- Link Box -->
+<div class="bg-white/5 p-3 rounded-xl border border-white/10 mb-5">
+<p class="text-[10px] text-gray-500">PROFILE LINK</p>
+<a href="https://www.facebook.com/profile.php?id=61587309377969" target="_blank" class="text-blue-400 text-xs break-all">
+facebook.com/profile.php?id=61587309377969
+</a>
+</div>
+
+<!-- Button -->
+<a href="https://www.facebook.com/profile.php?id=61587309377969" target="_blank">
+<button class="w-full py-3 rounded-xl text-white font-bold bg-gradient-to-r from-blue-600 to-purple-600 glow active:scale-95 transition">
+📩 এখনই মেসেজ করুন
+</button>
+</a>
+
+<!-- Footer -->
+<p class="text-gray-500 text-[10px] mt-5">
+STYLISH ID MAKER • V4ZRASHD
+</p>
+
+</div>
+</div>
+
+</body>
+</html>
